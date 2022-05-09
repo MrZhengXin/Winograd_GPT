@@ -19,7 +19,7 @@ with open('wsc273.jsonl', 'r') as f:
 # model_name = 'gpt2-xl' # 0.7326007326007326
 # model_name = 'EleutherAI/gpt-neo-2.7B' # 0.7362637362637363
 model_name = 'EleutherAI/gpt-j-6B' # 0.8131868131868132
-# model_name = 'EleutherAI/gpt-neox-20b'
+# model_name = 'EleutherAI/gpt-neox-20b' # 0.8608058608058609
 model = AutoModelForCausalLM.from_pretrained(model_name).cuda()
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
